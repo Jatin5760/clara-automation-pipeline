@@ -1,0 +1,12 @@
+Agent: This is Clara Calling, your AI Assistant. I'm here to help set up your account. Is this "ServiceMaster Restore"?
+Customer: Yes, this is "ServiceMaster Restore of the Gulf Coast".
+Agent: Thank you. Let's start with your business hours?
+Customer: Well, as a restoration company, we're technically open 24/7 for the dispatch, but our office staff is in Monday to Friday from 8:30 AM to 5:30 PM.
+Agent: Noted. Office hours 8:30 AM to 5:30 PM, but you operate 24/7 for emergencies. And your office address?
+Customer: 700 Storm Lane, Mobile, Alabama. 
+Agent: Thank you. What services do you specialize in?
+Customer: We handle fire damage restoration, water damage cleanup, mold remediation, and professional disinfecting services. We also do board-ups after storms.
+Agent: Excellent. Any specific constraints I should know about?
+Customer: We use "Restore360" for all our job tracking. It's a proprietary software we use to track moisture readings and such.
+Agent: I'll put "Integration with Restore360" under unknowns for now. We'll chat more on the onboarding call!
+Customer: Sounds good, thanks Clara.

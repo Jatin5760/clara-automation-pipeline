@@ -1,0 +1,24 @@
+{
+    "account_id": "tesla",
+    "company_name": "Tesla Auto Service",
+    "business_hours": "On saturdays we do half days: 9:00 AM - 1:00 PM | 8 am to 7 pm on weekdays, and: 9 AM - 1 PM (PT)",
+    "office_address": "45500 Fremont Boulevard",
+    "services_supported": [
+        "Battery",
+        "Half Days",
+        "Hardware Upgrades",
+        "Suspension",
+        "Tire Rotations"
+    ],
+    "emergency_definition": [],
+    "emergency_routing_rules": null,
+    "non_emergency_routing_rules": null,
+    "call_transfer_rules": null,
+    "integration_constraints": "Integrate with TeslaHub",
+    "after_hours_flow_summary": "Greet -> Verify Emergency -> If Emergency: Collect Address/Name/Phone & Escalated Transfer -> If Non-Emergency: Message for Morning",
+    "office_hours_flow_summary": "Greet -> Identify Caller -> Collect Inquiry -> Attempt Transfer -> Fallback Message",
+    "questions_or_unknowns": [
+        "What are the Emergency definition?"
+    ],
+    "notes": "Region: PT | Client uses TeslaHub."
+}

@@ -1,0 +1,14 @@
+Agent: Hi there, this is Clara from Clara AI. I'm helping get your answering service set up. Is this Mr. Rooter Plumbing?
+Customer: Yes, it is! This is the main dispatch for "Mr. Rooter Plumbing of Austin".
+Agent: Perfect. I'll need some basic details to configure your AI assistant. Let's start with your official company name for the records.
+Customer: Like I said, officially we are "Mr. Rooter Plumbing of Austin", but we just want the agent to introduce themselves as Mr. Rooter.
+Agent: Understood. And what are your normal business hours?
+Customer: We're open Monday through Friday, 7:30 AM to 6:00 PM. On Saturdays we do 8:00 AM to 4:00 PM. We're closed on Sundays, but we do have a night dispatch.
+Agent: Got it. 7:30 AM to 6 PM weekdays, and 8 AM to 4 PM on Saturdays. Next, what is your office address?
+Customer: We are located at 1234 Pipe Dream Lane, Austin, Texas, 78701.
+Agent: Thank you. And what core services does Mr. Rooter provide in this area?
+Customer: We handle full residential and commercial plumbing repairs. That includes drain cleaning, leak detection, septic tank maintenance, and water heater replacements. We also do basic pipe insulation for the winter months.
+Agent: I have noted those services. Anything else the AI should know?
+Customer: Well, we use a custom software system called "RooterLogic" which is based on ServiceTitan. We'll need to figure out integration for that later.
+Agent: I'll put "Integration with RooterLogic" under the unknowns for our onboarding team. Thank you for your time today!
+Customer: No problem, talk to you for the onboarding.

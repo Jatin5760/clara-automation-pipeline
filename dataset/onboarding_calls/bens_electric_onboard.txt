@@ -1,0 +1,57 @@
+Speaker 1: Hi, thanks for joining the onboarding call for Clara AI answering agent. Today we will confirm how calls should be handled for your business.
+
+Speaker 2: Sure, sounds good.
+
+Speaker 1: First, can you confirm the company name?
+
+Speaker 2: The company name is Ben's Electric Solutions.
+
+Speaker 1: Great. What are your business hours?
+
+Speaker 2: Our office hours are Monday through Friday from 8:00 AM to 6:00 PM, Eastern Time.
+
+Speaker 1: Perfect. During office hours, how should non-emergency calls be handled?
+
+Speaker 2: For regular service requests, the assistant should collect the caller’s name, phone number, and a short description of the electrical issue. Then it should try to transfer the call to our office line.
+
+Speaker 1: And what should happen if the transfer fails?
+
+Speaker 2: If the office line doesn’t answer within about 30 seconds, the assistant should tell the caller that someone from our team will call them back shortly and confirm their phone number.
+
+Speaker 1: Understood. Now let's talk about emergency calls. What situations should be treated as emergencies?
+
+Speaker 2: Emergencies include power outages, burning electrical smells, exposed wires, or anything that could be a fire risk.
+
+Speaker 1: Who should emergency calls be routed to?
+
+Speaker 2: Emergency calls should first go to our on-call electrician. Right now that is John Carter.
+
+Speaker 1: And if John does not answer?
+
+Speaker 2: If John doesn't answer within 30 seconds, the call should be transferred to me directly.
+
+Speaker 1: Great. Can you confirm your office address?
+
+Speaker 2: Yes, our office is located at 123 Main Street, Columbus, Ohio.
+
+Speaker 1: What should happen after business hours?
+
+Speaker 2: After hours, the assistant should first ask if the issue is an emergency. If it is an emergency, it should immediately collect the caller’s name, phone number, and service address and then try to transfer the call to the on-call electrician.
+
+Speaker 1: And if the transfer fails after hours?
+
+Speaker 2: If the transfer fails, the assistant should assure the caller that the emergency technician will contact them as soon as possible and confirm their phone number.
+
+Speaker 1: And for non-emergency calls after hours?
+
+Speaker 2: If it's not an emergency, the assistant should let the caller know that our office will reopen at 8:00 AM and offer to take a message or schedule a callback.
+
+Speaker 1: Perfect. Is there anything the assistant should never do?
+
+Speaker 2: Yes. The assistant should never create service jobs directly in ServiceTrade. Our office staff handles that manually.
+
+Speaker 1: Great, that helps a lot. We will configure the Clara answering agent based on these instructions.
+
+Speaker 2: Sounds good, thank you.
+
+Speaker 1: Thanks for your time. Have a great day.

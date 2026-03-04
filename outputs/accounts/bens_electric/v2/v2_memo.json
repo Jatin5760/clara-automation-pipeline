@@ -1,0 +1,18 @@
+{
+    "account_id": "bens_electric",
+    "company_name": "Ben's Electric",
+    "business_hours": "Monday through Friday: 8:00 AM - 6:00 PM",
+    "office_address": "123 Main Street, Columbus, Ohio",
+    "services_supported": [],
+    "emergency_definition": [
+        "power outages, burning electrical smells, exposed wires, or anything that could be a fire risk."
+    ],
+    "emergency_routing_rules": null,
+    "non_emergency_routing_rules": null,
+    "call_transfer_rules": null,
+    "integration_constraints": null,
+    "after_hours_flow_summary": "Greet -> Verify Emergency -> If Emergency: Collect Address/Name/Phone & Escalated Transfer -> If Non-Emergency: Message for Morning",
+    "office_hours_flow_summary": "Greet -> Identify Caller -> Collect Inquiry -> Attempt Transfer -> Fallback Message",
+    "questions_or_unknowns": [],
+    "notes": null
+}

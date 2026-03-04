@@ -1,0 +1,27 @@
+{
+    "account_id": "mr_rooter",
+    "company_name": "Mr. Rooter Plumbing",
+    "business_hours": "Re open monday through friday: 7:30 AM - 6:00 PM | On saturdays we do: 8:00 AM - 4:00 PM | 30 am to 6 pm weekdays, and: 8 AM - 4 PM",
+    "office_address": "1234 Pipe Dream Lane",
+    "services_supported": [
+        "Drain Cleaning",
+        "Have A Night Dispatch",
+        "Leak Detection",
+        "Maintenance",
+        "Plumbing",
+        "Repairs",
+        "Septic",
+        "Water Heater"
+    ],
+    "emergency_definition": [
+        "there is a major flood in the house, a sewage backup into the home, or a total loss of water supply."
+    ],
+    "emergency_routing_rules": "Transfer to our Shop Foreman at 555-0800",
+    "non_emergency_routing_rules": null,
+    "call_transfer_rules": null,
+    "integration_constraints": "Integrate with RooterLogic",
+    "after_hours_flow_summary": "Greet -> Verify Emergency -> If Emergency: Collect Address/Name/Phone & Escalated Transfer -> If Non-Emergency: Message for Morning",
+    "office_hours_flow_summary": "Greet -> Identify Caller -> Collect Inquiry -> Attempt Transfer -> Fallback Message",
+    "questions_or_unknowns": [],
+    "notes": null
+}

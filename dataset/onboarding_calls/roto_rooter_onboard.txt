@@ -1,0 +1,13 @@
+Specialist: Welcome to your onboarding, Roto-Rooter. Let's talk emergencies.
+Customer: For us, an emergency is strictly when a main sewer line is backed up into the house, or if there's a major pipe burst that requires an immediate water shutoff. A slow drain is just a regular service call.
+Specialist: Got it. Routing for those emergencies?
+Customer: Transfer emergency calls during office hours directly to our Lead Dispatcher at 555-5000.
+Specialist: And if they don't answer?
+Customer: Re-route back and take an urgent message for a 15-minute call-back.
+Specialist: Understood. What about non-emergencies during the day?
+Customer: For non-emergencies, just book them into the next available slot or take a message for the office staff. No transfers.
+Specialist: After hours?
+Customer: After hours, for any call, take a detailed message and email it to miami-disptach@rotorooter-services.fake. If it's a major flood, take the address and VIN if applicable, but actually just take their address and phone number for the morning crew.
+Specialist: Perfect. Logic updated. And engineering confirmed we can link to RooterBase via Salesforce API.
+Customer: Great! Let's get it launched.
+Specialist: Working on it now. Have a good one!

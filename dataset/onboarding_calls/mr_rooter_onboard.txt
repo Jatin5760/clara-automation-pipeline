@@ -1,0 +1,13 @@
+Specialist: Hi there, this is Alex from Clara AI. Welcome to your onboarding for Mr. Rooter Plumbing of Austin. 
+Customer: Thanks Alex. Ready to get this live.
+Specialist: Great. First, let's define what qualifies as an emergency for your plumbing business.
+Customer: For us, an emergency is strictly when there is a major flood in the house, a sewage backup into the home, or a total loss of water supply. Small drips or a slow drain are not emergencies.
+Specialist: Got it. And what are your routing rules for those emergencies during business hours?
+Customer: For active floods or backups, I want the AI to instantly transfer the call to our Shop Foreman at 555-0800. If he doesn't answer after 30 seconds, it should ring our internal emergency line at 555-0911.
+Specialist: Transfer to Foreman at 555-0800, then fallback to 555-0911 after 30 seconds. Perfect. What about non-emergencies during the day?
+Customer: For regular service, just take their name, number, and problem, and tell them someone will call back within two hours. Do not transfer these calls.
+Specialist: Understood. And what's the plan for after-hours calls?
+Customer: After hours, for any call, take a message and email it directly to night-dispatch@mrrooter-austin.fake. We deal with it the next morning unless it's a flood, in which case they should call the emergency tech line directly at 555-0777.
+Specialist: Perfect. I'll get those rules patched in right now. Oh, and our engineering team confirmed we can integrate with RooterLogic/ServiceTitan.
+Customer: That's great! Definitely make sure that's confirmed in the final spec.
+Specialist: Done. Have a great day!

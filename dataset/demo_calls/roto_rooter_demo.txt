@@ -1,0 +1,15 @@
+Agent: This is Clara Calling, your AI Assistant. I'm connected with "Roto-Rooter" today?
+Customer: Yes, this is the main office for "Roto-Rooter Plumbing & Water Cleanup" in Miami.
+Agent: Perfect. To get your AI set up, let's start with your official company name for the records.
+Customer: Well, officially it's "Roto-Rooter Plumbing & Drain Service", but the AI should just say Roto-Rooter.
+Agent: Got it. And what are your business hours?
+Customer: We are open Monday to Friday, 8:00 AM to 8:00 PM. On Saturdays we do 8:00 AM to 5:00 PM. We are totally closed on Sundays.
+Agent: Noted. What is your office address, Roto-Rooter?
+Customer: Our central hub is at 1000 Drain Way, Miami, Florida, 33101.
+Agent: Thank you. And what services should the AI support?
+Customer: We specialize in professional drain cleaning, hydro-jetting, sewer line inspections, and sump pump repair. We also do water damage cleanup and emergency plumbing repairs.
+Agent: Great. Any special constraints or notes?
+Customer: We use a proprietary system called "RooterBase" for our scheduling. It's essentially a custom wrap around Salesforce.
+Agent: I'll put "Integration with RooterBase (Salesforce)" under unknowns. Any final notes?
+Customer: No, that should be it for the basics.
+Agent: Thank you for your time today. Talk soon for the onboarding.

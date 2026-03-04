@@ -1,0 +1,15 @@
+Implementation Specialist: Hi Elon, welcome back. This is Alex from the Clara Implementation team. Let's get your AI fully configured for the Tesla Service Center. 
+Customer: Hey Alex. Sounds good, let's get into it.
+Specialist: Okay, looking at the setup note, it looks like we need to clarify your emergency definitions. When a customer calls in, how should the AI distinguish between an emergency and a regular service call?
+Customer: That's a great question. In the EV world, an emergency is very specific. We consider it an emergency ONLY if the vehicle is completely immobilized due to a total high-voltage battery failure, or if the customer is seeing a red 'Thermal Runaway' or 'Pull Over Safely' warning on their central screen. If it's a flat tire, that's regular roadside assistance, not a service center emergency.
+Specialist: Perfect. Now, what are your routing rules when an emergency does occur? 
+Customer: For those severe emergencies during our business hours, I want the AI to immediately transfer the call directly to our Lead Diagnostics Technician at 555-0199. They need to handle those situations immediately.
+Specialist: During business hours, transfer emergency calls to the Lead Technician at 555-0199. Got it. And what about non-emergency routing rules? For regular service inquiries?
+Customer: For non-emergencies, please do not transfer the call to the Lead Tech. Instead, the AI should try to book an appointment directly into our calendar. If they insist on speaking with a human for a non-emergency, transfer them to the general service desk at 555-0100.
+Specialist: Okay, I have non-emergencies booking appointments or transferring to 555-0100. What happens if someone calls after hours?
+Customer: Let's keep it simple. After hours, whether it's an emergency or not, the AI should take a very detailed message from the customer, including their VIN number, and email a summary of that message to night-support@tesla-service.fake. We don't have technicians on duty overnight, so everything goes to email.
+Specialist: Understood. After-hours flow will be: collect information and email to night-support@tesla-service.fake. Oh, and I see a note here from the demo regarding integrating with TeslaHub for your CRM. I just wanted to let you know that our development team has confirmed we *can* integrate with Salesforce-based systems, so that's fully supported. 
+Customer: Oh that's fantastic news! Yes, please make sure the integration constraints specify that you have green-lit the TeslaHub integration. 
+Specialist: Will do. I'll get all these call transfer rules and the new emergency definitions updated in your v2 Account Memo immediately. 
+Customer: Sounds like we're ready to roll. Thanks Alex.
+Specialist: Thank you, Elon. Have a great day.

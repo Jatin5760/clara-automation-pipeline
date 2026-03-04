@@ -1,0 +1,2 @@
+# No external dependencies required for rule-based extraction.
+# Scripts use standard libraries (os, sys, json, argparse, re, datetime).

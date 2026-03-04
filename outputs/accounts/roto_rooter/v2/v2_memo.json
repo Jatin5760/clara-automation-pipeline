@@ -1,0 +1,24 @@
+{
+    "account_id": "roto_rooter",
+    "company_name": "Roto-Rooter",
+    "business_hours": "Open monday to friday: 8:00 AM - 8:00 PM | On saturdays we do: 8:00 AM - 5:00 PM",
+    "office_address": null,
+    "services_supported": [
+        "Drain Cleaning",
+        "Plumbing",
+        "Professional Drain Cleaning",
+        "Repairs",
+        "Water Cleanup"
+    ],
+    "emergency_definition": [
+        "a main sewer line is backed up into the house, or if there's a major pipe burst that requires an immediate water shutoff."
+    ],
+    "emergency_routing_rules": null,
+    "non_emergency_routing_rules": "just book them into the next available slot or take a message for the office staff.",
+    "call_transfer_rules": null,
+    "integration_constraints": null,
+    "after_hours_flow_summary": "Greet -> Verify Emergency -> If Emergency: Collect Address/Name/Phone & Escalated Transfer -> If Non-Emergency: Message for Morning",
+    "office_hours_flow_summary": "Greet -> Identify Caller -> Collect Inquiry -> Attempt Transfer -> Fallback Message",
+    "questions_or_unknowns": [],
+    "notes": null
+}

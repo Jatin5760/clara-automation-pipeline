@@ -1,0 +1,69 @@
+{
+  "name": "Clara Pipeline A - Demo Call",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "clara-demo",
+        "options": {}
+      },
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        250,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "command": "=python3 scripts/extract_memo.py dataset/demo_calls/{{$('Webhook').item.json.body.transcript}} outputs/accounts/{{$('Webhook').item.json.body.account_id}}/v1/v1_memo.json && python3 scripts/update_tracker.py {{$('Webhook').item.json.body.account_id}} \"Pipeline A - Extraction\" Success"
+      },
+      "name": "Extract Memo",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        450,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "command": "=python3 scripts/generate_agent.py outputs/accounts/{{$('Webhook').item.json.body.account_id}}/v1/v1_memo.json v1 outputs/accounts/{{$('Webhook').item.json.body.account_id}}/v1/v1_agent_spec.json"
+      },
+      "name": "Generate Agent",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        650,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Extract Memo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Memo": {
+      "main": [
+        [
+          {
+            "node": "Generate Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {}
+}

@@ -1,0 +1,24 @@
+{
+    "account_id": "tesla",
+    "company_name": "Tesla Auto Service",
+    "business_hours": "On saturdays we do half days: 9:00 AM - 1:00 PM | 8 am to 7 pm on weekdays, and: 9 AM - 1 PM (PT)",
+    "office_address": "45500 Fremont Boulevard",
+    "services_supported": [
+        "Battery",
+        "Half Days",
+        "Hardware Upgrades",
+        "Suspension",
+        "Tire Rotations"
+    ],
+    "emergency_definition": [
+        "the vehicle is completely immobilized due to a total high-voltage battery failure, or if the customer is seeing a red 'Thermal Runaway' or 'Pull Over Safely' warning on their central screen."
+    ],
+    "emergency_routing_rules": "Transfer to our Lead Diagnostics Technician at 555-0199",
+    "non_emergency_routing_rules": "please do not transfer the call to the Lead Tech.",
+    "call_transfer_rules": null,
+    "integration_constraints": "Integrate with TeslaHub",
+    "after_hours_flow_summary": "Greet -> Verify Emergency -> If Emergency: Collect Address/Name/Phone & Escalated Transfer -> If Non-Emergency: Message for Morning",
+    "office_hours_flow_summary": "Greet -> Identify Caller -> Collect Inquiry -> Attempt Transfer -> Fallback Message",
+    "questions_or_unknowns": [],
+    "notes": "Region: PT | Client uses TeslaHub."
+}

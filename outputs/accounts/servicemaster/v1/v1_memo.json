@@ -1,0 +1,28 @@
+{
+    "account_id": "servicemaster",
+    "company_name": "ServiceMaster Restore",
+    "business_hours": null,
+    "office_address": null,
+    "services_supported": [
+        "Board-Ups",
+        "Disinfecting",
+        "Fire Damage",
+        "Fire Damage Restoration",
+        "Mold Remediation",
+        "Professional Disinfecting Services",
+        "Water Damage Cleanup"
+    ],
+    "emergency_definition": [],
+    "emergency_routing_rules": null,
+    "non_emergency_routing_rules": null,
+    "call_transfer_rules": null,
+    "integration_constraints": null,
+    "after_hours_flow_summary": "Greet -> Verify Emergency -> If Emergency: Collect Address/Name/Phone & Escalated Transfer -> If Non-Emergency: Message for Morning",
+    "office_hours_flow_summary": "Greet -> Identify Caller -> Collect Inquiry -> Attempt Transfer -> Fallback Message",
+    "questions_or_unknowns": [
+        "What are the Business hours?",
+        "What are the Office address?",
+        "What are the Emergency definition?"
+    ],
+    "notes": null
+}

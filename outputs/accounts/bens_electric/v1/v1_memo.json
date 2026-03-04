@@ -1,0 +1,19 @@
+{
+    "account_id": "bens_electric",
+    "company_name": "Ben's Electric",
+    "business_hours": null,
+    "office_address": "17119 Sundown Road",
+    "services_supported": [],
+    "emergency_definition": [],
+    "emergency_routing_rules": null,
+    "non_emergency_routing_rules": null,
+    "call_transfer_rules": null,
+    "integration_constraints": null,
+    "after_hours_flow_summary": "Greet -> Verify Emergency -> If Emergency: Collect Address/Name/Phone & Escalated Transfer -> If Non-Emergency: Message for Morning",
+    "office_hours_flow_summary": "Greet -> Identify Caller -> Collect Inquiry -> Attempt Transfer -> Fallback Message",
+    "questions_or_unknowns": [
+        "What are the Business hours?",
+        "What are the Emergency definition?"
+    ],
+    "notes": null
+}

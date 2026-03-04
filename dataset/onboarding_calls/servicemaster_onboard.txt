@@ -1,0 +1,13 @@
+Specialist: Welcome to your onboarding, ServiceMaster Restore of the Gulf Coast. Let's talk emergencies.
+Customer: In our line of work, an emergency is strictly when there is standing water in a building, or active smoke/fire damage that needs immediate mitigation to prevent further loss. Mold is almost never an emergency unless it's a hospital.
+Specialist: Got it. Standing water or active fire damage. Routing for those?
+Customer: Transfer emergencies during office hours directly to our Lead Estimator at 555-2020. 
+Specialist: And if they don't answer?
+Customer: If there's no answer after 15 seconds, loop back and take a detailed message for immediate page-out.
+Specialist: Copy that. What about non-emergencies during the day?
+Customer: Just book a site assessment or take a message for the office. No transfers.
+Specialist: After hours?
+Customer: After hours, for water or fire damage, transfer directly to our 24/7 On-Call Supervisor at 555-9000. For anything else, just take a message for the morning.
+Specialist: Perfect. I'll patch these rules into your v2 spec. And good news, our dev team confirmed we can build an API link to Restore360.
+Customer: Solid! Let's get it launched.
+Specialist: Working on it now. Have a good one!

@@ -1,0 +1,69 @@
+{
+    "name": "Clara Pipeline B - Onboarding Update",
+    "nodes": [
+        {
+            "parameters": {
+                "httpMethod": "POST",
+                "path": "clara-onboarding",
+                "options": {}
+            },
+            "name": "Webhook",
+            "type": "n8n-nodes-base.webhook",
+            "typeVersion": 1,
+            "position": [
+                250,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "command": "=python3 scripts/patch_memo.py outputs/accounts/{{$('Webhook').item.json.body.account_id}}/v1/v1_memo.json dataset/onboarding_calls/{{$('Webhook').item.json.body.transcript}} outputs/accounts/{{$('Webhook').item.json.body.account_id}}/v2/v2_memo.json outputs/accounts/{{$('Webhook').item.json.body.account_id}}/v2/changes.md && python3 scripts/update_tracker.py {{$('Webhook').item.json.body.account_id}} \"Pipeline B - Patching\" Success"
+            },
+            "name": "Patch Memo",
+            "type": "n8n-nodes-base.executeCommand",
+            "typeVersion": 1,
+            "position": [
+                450,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "command": "=python3 scripts/generate_agent.py outputs/accounts/{{$('Webhook').item.json.body.account_id}}/v2/v2_memo.json v2 outputs/accounts/{{$('Webhook').item.json.body.account_id}}/v2/v2_agent_spec.json"
+            },
+            "name": "Regenerate Agent",
+            "type": "n8n-nodes-base.executeCommand",
+            "typeVersion": 1,
+            "position": [
+                650,
+                300
+            ]
+        }
+    ],
+    "connections": {
+        "Webhook": {
+            "main": [
+                [
+                    {
+                        "node": "Patch Memo",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Patch Memo": {
+            "main": [
+                [
+                    {
+                        "node": "Regenerate Agent",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        }
+    },
+    "active": false,
+    "settings": {}
+}

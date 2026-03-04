@@ -1,0 +1,18 @@
+Agent: This is Clara Calling, your AI Assistant from Clara AI. I'm connected with Tesla Service Center, is that correct?
+Customer: Yes, this is Elon from the Tesla Auto Service Center here in Fremont.
+Agent: Great to meet you, Elon. I'm here to help you set up an AI assistant that will handle incoming calls for your customers. To ensure I get everything configured perfectly, I'll need to ask some questions about your operations. Let's start with your official company name.
+Customer: Well, officially it's Tesla Auto Service, but everybody just calls us the Tesla Service Center. 
+Agent: Thank you. And what are your normal operating business hours?
+Customer: We're open Monday to Friday, from 8:00 AM straight through to 7:00 PM. On Saturdays we do half days, 9:00 AM to 1:00 PM. We are totally closed on Sundays to give the technicians a break.
+Agent: Got it. I have noted 8 AM to 7 PM on weekdays, and 9 AM to 1 PM on Saturdays. Next, what is the exact physical address of the service center?
+Customer: Our main hub here is located at 45500 Fremont Boulevard, Fremont, California.
+Agent: Excellent. Now, what core services does the Tesla Service Center support? What should I tell customers when they ask what you do?
+Customer: Okay, so we only handle electric vehicles. We do routine battery diagnostics, high-voltage battery replacements, tire rotations, and general suspension work. We also deal with hardware upgrades, like installing the full self-driving computer. One really important thing: if someone asks about oil changes or spark plugs, tell them we don't do that. It's electric vehicles only.
+Agent: I will make sure the AI knows you exclusively support electric vehicles and do not perform traditional combustion engine maintenance. 
+Customer: We also get a lot of people calling about software updates. If someone asks about downloading a new software update, they just need to connect their car to Wi-Fi and do it from the Tesla App. They shouldn't be bringing the car into the service center for standard over-the-air updates unless it gets stuck or fails.
+Agent: Understood. I will direct software update questions to the Tesla App. Are there any other specific constraints or things the AI should know?
+Customer: Well, for anything relating to our internal systems, we use a custom CRM called TeslaHub. It's built inside Salesforce, but we call it TeslaHub. I'm not sure if you guys can integrate with that yet, so I think that's a question for later.
+Agent: Okay, I will put 'Integration with TeslaHub (Salesforce)' down under questions or unknowns for the onboarding team to figure out. Any other notes I should add?
+Customer: No, I think that covers the basics for now. We can dive into the routing rules next time.
+Agent: Perfect. I have extracted all your information. We'll be in touch for the onboarding call soon to finalize the setup. Have a great day, Elon.
+Customer: You too, bye.
