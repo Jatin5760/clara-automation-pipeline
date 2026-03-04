@@ -102,7 +102,13 @@ streamlit run dashboard.py
 ```
 
 ### 3. 🗺️ Pipeline Visualization
+
+**🔄 Pipeline A: Demo Knowledge Extraction**  
+*Extracts preliminary business logic and routing flows from raw demo transcripts.*
 ![Pipeline A - Demo Workflow](media/n8n_pipeline_a.png)
+
+**⚡ Pipeline B: Continuous Onboarding Patching**  
+*Refines the agent specification by patching assumptions with real onboarding data.*
 ![Pipeline B - Onboarding Workflow](media/n8n_pipeline_b.png)
 
 ---
