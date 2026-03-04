@@ -8,26 +8,47 @@ This repository contains an end-to-end, zero-cost, and robust automation pipelin
 
 ```mermaid
 graph TD
-    subgraph "Pipeline A: Demo Extraction"
-    A1[Demo Call Transcript] -->|n8n| B1[[extract_memo.py]]
-    B1 --> C1[(v1_memo.json)]
-    C1 --> D1[[generate_agent.py]]
-    D1 --> E1[Retell Agent Spec v1]
+    %% Node Definitions
+    A1[Demo Call Transcript]
+    B1[[extract_memo.py]]
+    C1[(v1_memo.json)]
+    D1[[generate_agent.py]]
+    E1[Retell Agent Spec v1]
+
+    A2[Onboarding Transcript]
+    B2[[patch_memo.py]]
+    C2[(v2_memo.json)]
+    D2[changes.md Diff]
+    E2[[generate_agent.py]]
+    F2[Retell Agent Spec v2]
+
+    subgraph "Pipeline A: Demo Call Extraction"
+        direction TB
+        A1 -->|n8n Orchestrator| B1
+        B1 --> C1
+        C1 --> D1
+        D1 --> E1
     end
 
     subgraph "Pipeline B: Onboarding Update"
-    A2[Onboarding Transcript] -->|n8n| B2[[patch_memo.py]]
-    C1 --> B2
-    B2 --> C2[(v2_memo.json)]
-    B2 --> D2[changes.md Diff]
-    C2 --> E2[[generate_agent.py]]
-    E2 --> F2[Retell Agent Spec v2]
+        direction TB
+        A2 -->|n8n Orchestrator| B2
+        C1 -->|Sync| B2
+        B2 --> C2
+        B2 --> D2
+        C2 --> E2
+        E2 --> F2
     end
 
-    style B1 fill:#f9f,stroke:#333,stroke-width:2px
-    style B2 fill:#f9f,stroke:#333,stroke-width:2px
-    style E1 fill:#bbf,stroke:#333,stroke-width:2px
-    style E2 fill:#bbf,stroke:#333,stroke-width:2px
+    %% High Contrast Styling
+    style B1 fill:#f9f,stroke:#333,stroke-width:2px,color:#000
+    style B2 fill:#f9f,stroke:#333,stroke-width:2px,color:#000
+    style D1 fill:#bbf,stroke:#333,stroke-width:2px,color:#000
+    style E1 fill:#dfd,stroke:#333,stroke-width:2px,color:#000
+    style E2 fill:#bbf,stroke:#333,stroke-width:2px,color:#000
+    style F2 fill:#dfd,stroke:#333,stroke-width:2px,color:#000
+    style C1 fill:#cfc,stroke:#333,stroke-width:2px,color:#000
+    style C2 fill:#cfc,stroke:#333,stroke-width:2px,color:#000
 ```
 
 1. **Orchestrator**: [n8n](https://n8n.io/) running locally via npm (Free & Zero-Cost).
