@@ -28,49 +28,34 @@
 Visualizing how we turn raw audio transcripts into structural intelligence.
 
 ```mermaid
-%%{init: {'theme': 'dark', 'themeVariables': { 'background': '#000000', 'primaryTextColor': '#ffffff', 'lineColor': '#ffffff'}}}%%
-graph TD
-    %% Node Definitions
-    A1[🎙️ Demo Call Transcript]
-    B1[[⚙️ extract_memo.py]]
-    C1[(📝 v1_memo.json)]
-    D1[[🛠️ generate_agent.py]]
-    E1[🤖 Agent Spec v1]
-
-    A2[🎧 Onboarding Transcript]
-    B2[[⚡ patch_memo.py]]
-    C2[(📋 v2_memo.json)]
-    D2[🔄 changes.md Diff]
-    E2[[🛠️ generate_agent.py]]
-    F2[🚀 Agent Spec v2]
-
-    subgraph "Phase 1: Knowledge Extraction"
-        A1 -->|n8n Orchestrator| B1
-        B1 --> C1
-        C1 --> D1
-        D1 --> E1
+%%{init: {"theme": "dark", "themeVariables": {"background": "#000000", "mainBkg": "#000000", "clusterBkg": "#111111", "primaryTextColor": "#ffffff", "lineColor": "#aaaaaa", "edgeLabelBackground": "#000000"}}}%%
+graph LR
+    subgraph PA ["Phase 1: Demo Extraction"]
+        A1[Demo Call Transcript] -->|n8n| B1[[extract_memo.py]]
+        B1 --> C1[(v1_memo.json)]
+        C1 --> D1[[generate_agent.py]]
+        D1 --> E1[Agent Spec v1]
     end
 
-    subgraph "Phase 2: Intelligent Patching"
-        A2 -->|n8n Orchestrator| B2
-        C1 -->|Sync Context| B2
-        B2 --> C2
-        B2 --> D2
-        C2 --> E2
-        E2 --> F2
+    subgraph PB ["Phase 2: Onboarding Patch"]
+        A2[Onboarding Transcript] -->|n8n| B2[[patch_memo.py]]
+        B2 --> C2[(v2_memo.json)]
+        B2 --> D2[changes.md]
+        C2 --> E2[[generate_agent.py]]
+        E2 --> F2[Agent Spec v2]
     end
 
-    %% Professional Styling
-    style B1 fill:#ff7eb3,stroke:#333,stroke-width:2px,color:#000
-    style B2 fill:#ff7eb3,stroke:#333,stroke-width:2px,color:#000
-    style D1 fill:#7afcff,stroke:#333,stroke-width:2px,color:#000
-    style E1 fill:#9effa9,stroke:#333,stroke-width:2px,color:#000
-    style E2 fill:#7afcff,stroke:#333,stroke-width:2px,color:#000
-    style F2 fill:#9effa9,stroke:#333,stroke-width:2px,color:#000
-    style C1 fill:#fff7ad,stroke:#333,stroke-width:2px,color:#000
-    style C2 fill:#fff7ad,stroke:#333,stroke-width:2px,color:#000
+    C1 -->|Sync| B2
+
+    style B1 fill:#ff7eb3,stroke:#000,color:#000
+    style B2 fill:#ff7eb3,stroke:#000,color:#000
+    style D1 fill:#7afcff,stroke:#000,color:#000
+    style E2 fill:#7afcff,stroke:#000,color:#000
+    style E1 fill:#9effa9,stroke:#000,color:#000
+    style F2 fill:#9effa9,stroke:#000,color:#000
+    style C1 fill:#fff7ad,stroke:#000,color:#000
+    style C2 fill:#fff7ad,stroke:#000,color:#000
 ```
-
 ---
 
 ## 💎 Core Features
