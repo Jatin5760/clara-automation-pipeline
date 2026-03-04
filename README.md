@@ -2,9 +2,9 @@
 
 This repository contains an end-to-end, zero-cost, and robust automation pipeline for configuring the Clara Answers voice agent based on raw demo and onboarding call inputs. The solution emphasizes systems thinking, strict prompt hygiene, and clean data versioning.
 
-![Clara Command Center](media/dashboard_main.png)
-
 ## Architecture and Data Flow
+
+![Clara Command Center](media/dashboard_main.png)
 
 ```mermaid
 graph TD
