@@ -86,6 +86,13 @@ graph TD
 ### 3. Importing Workflows
 1. Inside n8n, navigate to **Workflows -> Import from File**.
 2. Select the JSON files located inside the `/workflows` directory.
+
+#### Pipeline A - Demo Call (n8n)
+![Pipeline A Workflow](media/n8n_pipeline_a.png)
+
+#### Pipeline B - Onboarding Update (n8n)
+![Pipeline B Workflow](media/n8n_pipeline_b.png)
+
 3. **Crucial**: Start `n8n` from the root of this `ClaraPipeline` directory so the `Execute Command` nodes can find the `/scripts` and `/dataset` folders.
 
 ### 4. Running the Python Pipelines directly
