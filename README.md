@@ -2,7 +2,33 @@
 
 This repository contains an end-to-end, zero-cost, and robust automation pipeline for configuring the Clara Answers voice agent based on raw demo and onboarding call inputs. The solution emphasizes systems thinking, strict prompt hygiene, and clean data versioning.
 
+![Clara Command Center](media/dashboard_main.png)
+
 ## Architecture and Data Flow
+
+```mermaid
+graph TD
+    subgraph "Pipeline A: Demo Extraction"
+    A1[Demo Call Transcript] -->|n8n| B1[[extract_memo.py]]
+    B1 --> C1[(v1_memo.json)]
+    C1 --> D1[[generate_agent.py]]
+    D1 --> E1[Retell Agent Spec v1]
+    end
+
+    subgraph "Pipeline B: Onboarding Update"
+    A2[Onboarding Transcript] -->|n8n| B2[[patch_memo.py]]
+    C1 --> B2
+    B2 --> C2[(v2_memo.json)]
+    B2 --> D2[changes.md Diff]
+    C2 --> E2[[generate_agent.py]]
+    E2 --> F2[Retell Agent Spec v2]
+    end
+
+    style B1 fill:#f9f,stroke:#333,stroke-width:2px
+    style B2 fill:#f9f,stroke:#333,stroke-width:2px
+    style E1 fill:#bbf,stroke:#333,stroke-width:2px
+    style E2 fill:#bbf,stroke:#333,stroke-width:2px
+```
 
 1. **Orchestrator**: [n8n](https://n8n.io/) running locally via npm (Free & Zero-Cost).
 2. **Extraction & Generation**: Pure Python helper scripts (`/scripts`) utilizing **Rule-Based Regex & Keyword Extraction**. This ensures 100% Zero-Cost compliance and perfect reproducibility without requiring external API keys or heavy dependency installs.
