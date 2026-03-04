@@ -28,16 +28,16 @@
 Visualizing how we turn raw audio transcripts into structural intelligence.
 
 ```mermaid
-%%{init: {"theme": "dark", "themeVariables": {"background": "#000000", "mainBkg": "#000000", "clusterBkg": "#111111", "primaryTextColor": "#ffffff", "lineColor": "#aaaaaa", "edgeLabelBackground": "#000000"}}}%%
-graph LR
-    subgraph PA ["Phase 1: Demo Extraction"]
+%%{init: {"theme": "dark", "themeVariables": {"background": "#000000", "mainBkg": "#1a1a1a", "clusterBkg": "#111111", "clusterBorder": "#555555", "primaryTextColor": "#ffffff", "lineColor": "#888888", "edgeLabelBackground": "#000000"}}}%%
+graph TD
+    subgraph PA ["Phase 1 - Demo Extraction"]
         A1[Demo Call Transcript] -->|n8n| B1[[extract_memo.py]]
         B1 --> C1[(v1_memo.json)]
         C1 --> D1[[generate_agent.py]]
         D1 --> E1[Agent Spec v1]
     end
 
-    subgraph PB ["Phase 2: Onboarding Patch"]
+    subgraph PB ["Phase 2 - Onboarding Patch"]
         A2[Onboarding Transcript] -->|n8n| B2[[patch_memo.py]]
         B2 --> C2[(v2_memo.json)]
         B2 --> D2[changes.md]
