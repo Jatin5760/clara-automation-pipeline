@@ -28,6 +28,7 @@
 Visualizing how we turn raw audio transcripts into structural intelligence.
 
 ```mermaid
+%%{init: {'theme': 'dark', 'themeVariables': { 'background': '#000000', 'primaryTextColor': '#ffffff', 'lineColor': '#ffffff'}}}%%
 graph TD
     %% Node Definitions
     A1[🎙️ Demo Call Transcript]
@@ -44,7 +45,6 @@ graph TD
     F2[🚀 Agent Spec v2]
 
     subgraph "Phase 1: Knowledge Extraction"
-        direction TB
         A1 -->|n8n Orchestrator| B1
         B1 --> C1
         C1 --> D1
@@ -52,7 +52,6 @@ graph TD
     end
 
     subgraph "Phase 2: Intelligent Patching"
-        direction TB
         A2 -->|n8n Orchestrator| B2
         C1 -->|Sync Context| B2
         B2 --> C2
@@ -126,6 +125,12 @@ streamlit run dashboard.py
 - **Intelligent Merging**: Seamlessly integrated onboarding feedback to overwrite initial demo call assumptions.
 - **Transparent Diffing**: Auto-generated the `changes.md` log tracking every technical modification made.
 - **Certified Production-Ready**: Finalized the `v2_agent_spec` at zero cost, ready for instant API deployment.
+
+#### 📜 Master Pipeline Tracker (Audit Log)
+![Audit Log Result](media/Result_AuditLog.png)
+- **Centralized Monitoring**: Live tracking of every pipeline run across all managed accounts.
+- **Built-in Quality Assurance**: Continuous health checks ensure prompt hygiene and zero-cost methodology are maintained.
+- **Audit-Ready Export**: One-click CSV export of historical execution logs for business reporting.
 
 ---
 
