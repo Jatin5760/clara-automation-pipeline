@@ -69,6 +69,10 @@ graph TD
 
 ## How to Run Locally
 
+#### Automation Flow (n8n Workflows)
+![Pipeline A - Demo Workflow](media/n8n_pipeline_a.png)
+![Pipeline B - Onboarding Workflow](media/n8n_pipeline_b.png)
+
 ### 1. Requirements
 *   **Node.js & npm** (To run n8n locally)
 *   **Python 3.8+** (No external libraries required for core logic)
@@ -88,9 +92,6 @@ graph TD
 2. Select the JSON files located inside the `/workflows` directory.
 3. **Crucial**: Start `n8n` from the root of this `ClaraPipeline` directory so the `Execute Command` nodes can find the `/scripts` and `/dataset` folders.
 
-#### Pipeline Visualization
-![Pipeline A - Demo Workflow](media/n8n_pipeline_a.png)
-![Pipeline B - Onboarding Workflow](media/n8n_pipeline_b.png)
 
 ### 4. Running the Python Pipelines directly
 The provided Python scripts are fully self-sufficient and idempotent:
