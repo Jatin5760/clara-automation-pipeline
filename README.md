@@ -127,7 +127,7 @@ streamlit run dashboard.py
 - **Certified Production-Ready**: Finalized the `v2_agent_spec` at zero cost, ready for instant API deployment.
 
 #### 📜 Master Pipeline Tracker (Audit Log)
-![Audit Log Result](media/Result_AuditLog.png)
+![Audit Log Result](media/Audit_Log.png)
 - **Centralized Monitoring**: Live tracking of every pipeline run across all managed accounts.
 - **Built-in Quality Assurance**: Continuous health checks ensure prompt hygiene and zero-cost methodology are maintained.
 - **Audit-Ready Export**: One-click CSV export of historical execution logs for business reporting.
