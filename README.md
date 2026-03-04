@@ -2,6 +2,14 @@
 
 This repository contains an end-to-end, zero-cost, and robust automation pipeline for configuring the Clara Answers voice agent based on raw demo and onboarding call inputs. The solution emphasizes systems thinking, strict prompt hygiene, and clean data versioning.
 
+## 📺 Command Center Dashboard
+
+The project includes a professional, polished dashboard with **Global Light/Dark Mode Support** and a **Compact Single-Screen Layout**.
+
+![Clara Command Center - Light Mode](media/dashboard_main.png)
+
+![Clara Command Center - Dark Mode](media/dashboard_dark.png)
+
 ## Architecture and Data Flow
 
 1. **Orchestrator**: [n8n](https://n8n.io/) running locally via npm (Free & Zero-Cost).
