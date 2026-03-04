@@ -2,6 +2,7 @@
 
 This repository contains an end-to-end, zero-cost, and robust automation pipeline for configuring the Clara Answers voice agent based on raw demo and onboarding call inputs. The solution emphasizes systems thinking, strict prompt hygiene, and clean data versioning.
 
+![Clara Command Center](media/dashboard_main.png)
 
 ## Architecture and Data Flow
 
@@ -86,6 +87,10 @@ graph TD
 1. Inside n8n, navigate to **Workflows -> Import from File**.
 2. Select the JSON files located inside the `/workflows` directory.
 3. **Crucial**: Start `n8n` from the root of this `ClaraPipeline` directory so the `Execute Command` nodes can find the `/scripts` and `/dataset` folders.
+
+#### Pipeline Visualization
+![Pipeline A - Demo Workflow](media/n8n_pipeline_a.png)
+![Pipeline B - Onboarding Workflow](media/n8n_pipeline_b.png)
 
 ### 4. Running the Python Pipelines directly
 The provided Python scripts are fully self-sufficient and idempotent:
