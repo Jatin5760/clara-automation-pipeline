@@ -107,10 +107,21 @@ streamlit run dashboard.py
 
 ---
 
-## 🚀 Future Roadmap
-- [ ] **Retell API Push**: Direct deployment from dashboard to production.
-- [ ] **Multi-Voice Support**: Dynamic voice-style swapping in `v2`.
-- [ ] **Health Checks**: Real-time rubric compliance active monitoring.
+## 📈 Results Showcase
+
+#### 🚀 Pipeline A: Preliminary Spec Generated
+![Demo Result](media/Result_demo.png)
+- **Extracted Intelligence**: Automatically captured booking rules, business availability, and call routing logic.
+- **Standardized Schema**: Generated a JSON specification perfectly aligned with Retell API requirements.
+- **Assumption Tracking**: Gracefully handled missing data by populating the `questions_or_unknowns` audit field.
+
+#### 🏁 Pipeline B: Final Polished Spec (Onboarded)
+![Onboarded Result](media/Result_Onboarded.png)
+- **Intelligent Merging**: Seamlessly integrated onboarding feedback to overwrite initial demo call assumptions.
+- **Transparent Diffing**: Auto-generated the `changes.md` log tracking every technical modification made.
+- **Certified Production-Ready**: Finalized the `v2_agent_spec` at zero cost, ready for instant API deployment.
+
+---
 
 <div align="center">
 Built with ❤️ for Clara Answers.  
